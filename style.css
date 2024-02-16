@@ -15,7 +15,7 @@ html{
 .main_div{
     width: 100vw;
     height: 100vh;
-    background-color: #f6f6f6;
+    background-color: #eef0f7;
     display: grid;
     place-items: center;
 }
@@ -23,10 +23,13 @@ html{
 .music_container{
     width: 35rem;
     height: 55rem;
-    background-color: #ffff ;
+    /* background-color: #ffff ; */
+    background-color:#E1CEC9;
     border-radius: 2rem;
-    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 2rem 3rem 0.5rem rgba(42, 24, 24, 0.2);
     padding: 3rem;
+    border: 2px solid black;
     text-align: center;
 }
 

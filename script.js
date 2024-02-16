@@ -120,6 +120,21 @@ music.addEventListener('timeupdate', (event) => {    //timeupade is an inbuild e
 
 
 //start playing song from where clicked on the progress bar
+const progress_div = document.getElementById('progress_div');
+
+progress_div.addEventListener('click', (event) => { 
+    //console.log(event);
+    //let move_progress = (event.offsetX / event.srcElement.clientWidth)//returns % but we want time in min:sec
+    //console.log(move_progress);
+
+    //we will use current.Time
+    const { duration } = music;
+    let move_progress = (event.offsetX / event.srcElement.clientWidth) * duration
+    // console.log(move_progress);
+    // console.log(duration);
+
+    music.currentTime = move_progress; //use to update or set new value to currennt time so thatthe song will start playing from that particular time.
+})
 
 
 music.addEventListener("ended", nextSong) //1st song ends automatically play next song 
